@@ -1,0 +1,319 @@
+
+.mainBannerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -110px;
+    height: 700px;
+    overflow: hidden;
+
+
+    .mainBannerVideo {
+        width: auto;
+        height: 120vh;
+
+    }
+
+}
+
+.mainTitle {
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 75pt;
+    position: absolute;
+
+}
+
+@keyframes rotativeText {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.indexTextRotateBox {
+    display: flex;
+    justify-content: center;
+
+
+
+    img {
+        margin-top: -82px;
+        width: 200px;
+        position: relative;
+        animation-name: rotativeText;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+
+    }
+}
+
+.serviceBoxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+
+    .serviceBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 2s;
+
+
+
+        // &:hover {
+        //     transform: scale(1.2);
+        // }
+
+
+        img {
+            width: 100px;
+            margin-bottom: 10px;
+            z-index: 3;
+
+        }
+
+        p {
+            font-size: 16pt;
+            font-family: 'Poppins', sans-serif;
+            color: $serviceText;
+            font-weight: 600;
+            transition: all 2s;
+            margin-bottom: 30px;
+
+        }
+    }
+
+}
+
+.indexContainerOne,
+.indexContainerTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    color: rgb(22, 22, 22);
+    margin-bottom: 70px;
+
+    .indexTeamImg {
+        width: 680px;
+    }
+
+
+    img {
+        width: 320px;
+        margin-left: 20px;
+    }
+
+    .indexText {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+
+        .indexTitle {
+            display: flex;
+        }
+
+
+        h2 {
+            font-size: 13pt;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 33pt;
+            font-weight: 900;
+            line-height: 46px;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: justify;
+        }
+    }
+}
+
+
+
+.indexContainerTwo{
+    img {
+        width: 630px;
+    } 
+
+}
+
+
+.indexCounterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .counterBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f6f3f3;
+        width: 100%;
+        height: 150px;
+        column-gap: 80px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    p {
+        font-size: 12pt;
+        font-weight: 500;
+        color: $serviceText;
+        text-align: center;
+    }
+}
+
+
+.cont1,
+.cont2,
+.cont3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 45pt;
+    font-weight: 800;
+    color: $contColor;
+    margin-bottom: -12px;
+    width: 130px;
+
+}
+
+
+
+
+@media (max-width: 1290px) {}
+
+@media (max-width: 950px) {
+    .mainTitle {
+        font-size: 55pt;
+
+    }
+
+
+
+}
+
+@media (max-width: 660px) {
+    .mainTitle {
+        font-size: 45pt;
+        margin-left: 20px
+    }
+
+    .serviceBoxContainer{
+        column-gap: 0px;
+    }
+
+    .serviceBoxContainer .serviceBox img {
+        width: 180px;
+        margin-bottom: 20px;
+        
+
+    }
+
+    .serviceBoxContainer .serviceBox p {
+        margin-bottom: 50px;
+        font-size: 20pt;
+    }
+
+    .indexContainerOne,
+    .indexContainerTwo {
+        flex-direction: column;
+        align-items: center;
+
+        .indexText {
+            width: 300px;
+
+
+            h3 {
+                font-size: 21pt;
+                font-weight: 900;
+                line-height: 36px;
+
+            }
+
+            h2 {
+                font-size: 16pt;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+
+            p {
+                margin-top: 20px;
+                text-align: justify
+            }
+        }
+
+    }
+
+    .indexContainerTwo {
+        flex-direction: column-reverse;
+        
+        
+
+        img {
+            width: 90%;
+
+        }
+    }
+// .indexContainerImg{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+    .indexCounterBox {
+        display: flex;
+        justify-content: center;
+
+        .counterBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f6f3f3;
+            width: 250px;
+            height: 500px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            p {
+                margin-bottom: 30px
+            }
+
+
+        }
+
+    }
+
+    .indexContainerOne .indexTeamImg,
+    .indexContainerTwo .indexTeamImg {
+      width: 90%;
+    }
+}
+
+

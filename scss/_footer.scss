@@ -1,0 +1,137 @@
+footer {
+    display: flex;
+    flex-direction: column;
+
+    .footerTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 70px;
+        background-color: $footerTop;
+        width: 100%;
+        height: 320px;
+        font-weight: 700;
+
+
+        img {
+            width: 190px;
+        }
+
+
+        .footerText {
+            width: 650px;
+            line-height: 75px;
+            margin-left: -80px;
+
+            .footerTextOne {
+                color: $contColor;
+                font-size: 26pt;
+                margin-bottom: -10px;
+            }
+
+            .footerTextTwo {
+                color: white;
+                font-size: 56pt;
+                margin-bottom: 10px;
+            }
+
+            .footerTextThree {
+                color: $contColor;
+                font-size: 76pt;
+                margin-bottom: 20px;
+            }
+
+        }
+
+    }
+
+    .footerBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $contColor;
+        height: 100px;
+        color: white;
+        width: 100%;
+        font-size: 26pt;
+        
+
+        .footerLogo{
+            height: 70px;            
+        }
+
+    }
+}
+
+@media (max-width: 660px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    
+        .footerTop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            background-color: $footerTop;
+            width: 100%;
+            height: 280px;
+            font-weight: 700;
+    
+    
+            .footerWhatsapp{
+                position: absolute;
+                right: 10%;
+                img {
+                    width: 90px;
+                }   
+            }
+
+          
+    
+            .footerText {
+                width: 250px;
+                line-height: 45px;
+                
+                
+    
+                .footerTextOne {
+                    color: $contColor;
+                    font-size: 16pt;
+                    margin-bottom: -10px;
+                }
+    
+                .footerTextTwo {
+                    color: white;
+                    font-size: 26pt;
+                    margin-bottom: 10px;
+                }
+    
+                .footerTextThree {
+                    color: $contColor;
+                    font-size: 36pt;
+                }
+    
+            }
+    
+        }
+    
+        .footerBottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $contColor;
+            height: 100px;
+            color: white;
+            width: 100%;
+            font-size: 26pt;
+            
+    
+            .footerLogo{
+                height: 60px;            
+            }
+    
+        }
+    }
+}
